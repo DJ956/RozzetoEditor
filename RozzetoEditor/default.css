@@ -1,0 +1,18 @@
+body{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.side-bar{
+    opacity: 0.9;
+}
+
+.side-bar-content{
+    margin-top: 10px;
+}
+
+.rozetto{
+    text-align: center;
+    position: absolute;
+    cursor: default;
+}

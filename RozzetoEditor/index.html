@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ローゼット管理</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="default.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container">
+                    <a href="/" class="navbar-brand">ローゼット</a>
+                    
+                    <div class="collapse navbar-collapse" id="base-navbars">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
+                            </li>
+                        </ul>
+                        <hr class="d-sm-flex d-md-flex d-lg-none">
+    
+                        <ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+                            <li class="nav-item mr-3">
+                                <div class="custom-file">
+                                    <input id="load_btn" type="file" class="custom-file-input" id="inputFile">
+                                    <label class="custom-file-label" for="inputFile"></label>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item">
+                                <button id="save_btn" class="btn btn-info">保存</button>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main">
+            <div style="position: relative;">
+                <div class="row">
+                    <div id="box" class="col-11">
+                        <img src="layout.jpg" width="1322px" height="835px"/>
+                    </div>
+
+                    <div class="col-1 bg-dark side-bar">
+                        <div class="side-bar-content">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modal">+</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ローゼットシンボル作成</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row ml-3">
+              <label>ローゼット名: </label>
+              <input class="form-control w-50" id="rozzeto_id" type="number">
+              <br>
+              <div class="col">
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          <button id="add_new" type="button" class="btn btn-primary">追加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <a class="text-secondary">
+                    <small class="text-muted">Powered by DJ</small>
+                </a>
+            </div>
+        </footer>
+
+    <script src="jquery2-0-3.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="default.js"></script>
+    <script src="fileio.js"></script>
+
+    </body>
+</html>
